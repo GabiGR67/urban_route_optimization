@@ -1,0 +1,25 @@
+# --- Visión por computador y detección ---
+ultralytics>=8.0.135
+opencv-python==4.9.0.80
+torch>=2.0.0
+
+# --- Manipulación de datos ---
+numpy==1.24.3
+pandas==2.0.3
+
+# --- Algoritmos de grafos y rutas ---
+networkx==3.1
+osmnx==1.7.1                # Para descargar mapas reales desde OpenStreetMap
+
+# --- Visualización ---
+matplotlib==3.7.1
+seaborn==0.12.2
+tqdm==4.65.0
+
+# --- Configuración y utilidades ---
+PyYAML==6.0
+
+# --- Entorno Jupyter ---
+notebook==7.0.0
+jupyterlab==4.0.2
+ipykernel==6.23.1
