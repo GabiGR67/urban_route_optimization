@@ -4,7 +4,7 @@ import numpy as np
 
 # Configuración
 base_dir = r'C:\Users\Usuario\Desktop\urban_route_optimization\dataset'
-split = 'test'  # Cambia a 'valid' o 'test' si quieres
+split = 'train'  # Cambia a 'valid' o 'test' si quieres
 images_dir = os.path.join(base_dir, split, 'images')
 labels_dir = os.path.join(base_dir, split, 'labels')
 
@@ -48,7 +48,7 @@ def mostrar_imagen(nombre_imagen):
 
                 clase = partes[0]
                 puntos = partes[1:]
-                color = (0, 255, 0) if clase == '0' else (0, 0, 255)
+                color = (0, 0, 255) if clase == '0' else (0, 255, 0)
                 etiqueta = class_names.get(clase, 'Clase desconocida')
 
                 if len(puntos) == 4:
