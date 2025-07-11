@@ -5,8 +5,8 @@ from ultralytics import YOLO
 
 # Rutas
 MODEL_PATH = r'C:\Users\Usuario\Desktop\urban_route_optimization\runs\segment\train\weights\best.pt'
-IMG_DIR = r'C:\Users\Usuario\Desktop\urban_route_optimization\dataset\test\images'
-LABEL_DIR = r'C:\Users\Usuario\Desktop\urban_route_optimization\dataset\test\labels'
+IMG_DIR = r'C:\Users\Usuario\Desktop\urban_route_optimization\dataset\valid\images'
+LABEL_DIR = r'C:\Users\Usuario\Desktop\urban_route_optimization\dataset\valid\labels'
 
 # Cargar modelo
 model = YOLO(MODEL_PATH)
