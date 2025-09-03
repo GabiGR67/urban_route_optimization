@@ -18,27 +18,26 @@ Este proyecto forma parte del Trabajo Fin de Máster (TFM) del Máster en Inteli
 ```bash
 urban_route_optimization/
 ├── data/                      # Datos crudos y procesados
-│   ├── raw/                   # Imágenes originales
-│   ├── processed/             # Recortes de señales
-│   ├── graph_data/            # Mapas o grafos exportados
-│   └── results/               # Salidas de rutas y evaluaciones
+│   └── graph_data/            # Mapas o grafos exportados
 │
-├── models/
-│   ├── yolo/                  # Modelo YOLO entrenado (best.pt)
-│   └── checkpoints/           # (opcional) Pesos intermedios
+├── runs/segment/
+│   ├── train/                  
+│   └── train2/           
 │
 ├── notebooks/                 # Exploraciones, pruebas y validaciones
 │   ├── 01_signal_detection.ipynb
-│   ├── 02_graph_building.ipynb
-│   └── 03_path_planning.ipynb
+│   └── final.ipynb
 │
 ├── src/                       # Código fuente organizado por módulos
 │   ├── detection/             # Detección de señales con YOLO
 │   ├── preprocessing/         # Mejora y segmentación de imágenes
-│   ├── graph/                 # Construcción del grafo vial
-│   ├── routing/               # Algoritmo de rutas
 │   └── config.py              # Configuración global del proyecto
+|
+├── output/ 
 │
+├── yolo11n.pt
+├── yolov8m-seg.pt
+├── CODEOWNERS
 ├── main.py                    # Ejecución del pipeline completo
 ├── requirements.txt           # Dependencias necesarias
 └── README.md                  # Este archivo
