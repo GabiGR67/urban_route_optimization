@@ -5,7 +5,7 @@ def main():
 
     model.train(
         data=r'C:\Users\Usuario\Desktop\urban_route_optimization\dataset\data.yaml',
-        epochs=50,
+        epochs=100,
         imgsz=640,
         batch=16,
         task='segment'
